@@ -355,7 +355,7 @@
             
             css(root, rootStyles);
             css(root, {
-                top: "50%",
+                top: "25%",
                 left: "50%",
                 transform: perspective( config.perspective/windowScale ) + scale( windowScale )
             });
