@@ -64,6 +64,13 @@ body {
     background:         radial-gradient(rgb(0, 140, 140), rgb(0, 90, 90));
 }
 
+#profile {
+    background-image: 'public/css/dbcphoto.jpeg';
+    border: 1px solid black;
+    width: 10em; height: 10em; 
+    -webkit-border-radius: 5em; -moz-border-radius: 5em;
+  }
+
 /*
     Now let's bring some text styles back ...
 */
