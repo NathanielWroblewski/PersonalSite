@@ -55,13 +55,13 @@ body {
     font-family: 'PT Sans', sans-serif;
     min-height: 740px;
 
-    background: rgb(215, 215, 215);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
-    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: rgb(0, 102, 102);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(0, 140, 140)), to(rgb(190, 190, 190)));
+    background: -webkit-radial-gradient(rgb(0, 140, 140), rgb(0, 90, 90));
+    background:    -moz-radial-gradient(rgb(0, 140, 140), rgb(0, 90, 90));
+    background:     -ms-radial-gradient(rgb(0, 140, 140), rgb(0, 90, 90));
+    background:      -o-radial-gradient(rgb(0, 140, 140), rgb(0, 90, 90));
+    background:         radial-gradient(rgb(0, 140, 140), rgb(0, 90, 90));
 }
 
 /*
@@ -90,17 +90,10 @@ a {
 
 a:hover,
 a:focus {
-    background: rgba(255,255,255,1);
+    /*background: rgba(255,255,255,1);*/
     text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
 }
 
-#guess {
-  text-align: center;
-}
-
-q {
-  text-align: center;
-}
 /*
     Because the main point behind the impress.js demo is to demo impress.js
     we display a fallback message for users with browsers that don't support
