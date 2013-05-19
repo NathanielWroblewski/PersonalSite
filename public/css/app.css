@@ -1,4 +1,4 @@
-/*browser reset*/
+/* ################### Browser Reset ###################### */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -21,7 +21,6 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
@@ -46,7 +45,7 @@ table {
     border-spacing: 0;
 }
 
-/*Background*/
+/* ################### Background ###################### */
 
 body {
     font-family: 'PT Sans', sans-serif;
@@ -61,3 +60,308 @@ body {
     background:         radial-gradient(rgb(0, 140, 140), rgb(0, 90, 90));
 }
 
+/* ################### Link Style ###################### */
+
+a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0 0.1em;
+    background: rgba(255,255,255,0.5);
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
+    border-radius: 0.2em;
+
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+}
+
+a:hover,
+a:focus {
+    background: rgba(255,255,255,1);
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
+}
+
+/* ################### Fallback Msg ###################### */
+
+.fallback-message {
+    font-family: sans-serif;
+    line-height: 1.3;
+
+    width: 780px;
+    padding: 10px 10px 0;
+    margin: 20px auto;
+
+    border: 1px solid #E4C652;
+    border-radius: 10px;
+    background: #EEDC94;
+}
+
+.fallback-message p {
+    margin-bottom: 10px;
+}
+
+.impress-supported .fallback-message {
+    display: none;
+}
+
+/* ################### Step Class ###################### */
+
+.step {
+    position: relative;
+    width: 900px;
+    padding: 40px;
+    margin: 20px auto;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+
+    font-family: 'PT Serif', georgia, serif;
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+.impress-enabled .step {
+    margin: 0;
+    opacity: 0.3;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.impress-enabled .step.active { opacity: 1 }
+
+/* ################### Hint ###################### */
+
+.hint {
+
+    display: none;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+
+    background: rgba(0,0,0,0.5);
+    color: #EEE;
+    text-align: center;
+
+    font-size: 50px;
+    padding: 20px;
+
+    z-index: 100;
+
+    opacity: 0;
+
+    -webkit-transform: translateY(400px);
+    -moz-transform:    translateY(400px);
+    -ms-transform:     translateY(400px);
+    -o-transform:      translateY(400px);
+    transform:         translateY(400px);
+
+    -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
+    -moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
+    -ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
+    -o-transition:      opacity 1s,      -o-transform 0.5s 1s;
+    transition:         opacity 1s,         transform 0.5s 1s;
+}
+
+.impress-enabled .hint { display: block }
+
+.impress-on-bored .hint {
+
+    opacity: 1;
+
+    -webkit-transform: translateY(0px);
+    -moz-transform:    translateY(0px);
+    -ms-transform:     translateY(0px);
+    -o-transform:      translateY(0px);
+    transform:         translateY(0px);
+
+    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
+    -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s 4.5s;
+    -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s 4.5s;
+    -o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
+    transition:         opacity 1s 5s,         transform 0.5s 4.5s;
+}
+
+.impress-enabled          { pointer-events: none }
+.impress-enabled #impress { pointer-events: auto }
+
+/* ################### Text ###################### */
+
+b, strong { font-weight: bold }
+i, em { font-style: italic }
+
+/* ################### Presentation ###################### */
+
+.slide {
+    display: block;
+
+    width: 900px;
+    height: 700px;
+    padding: 40px 60px;
+
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -1px;
+}
+
+#profile {
+    position: absolute;
+    display: block;
+    line-height: 72px;
+    margin-top: 30px;
+    background-image:url('/img/dbcphoto.jpeg');
+    left: 12.5em;
+    background-size: 103%;
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+    width: 4em; height: 4em; 
+    -webkit-border-radius: 4em; -moz-border-radius: 4em;
+}
+
+span {
+
+}
+
+#hello {
+    position: absolute;
+    font-size: 64px;
+    top: 4.5em;
+    left: -1em;
+    display: none;
+}
+
+#my {
+    font-size: 55px;
+    position: absolute;
+    top: 5.29em;
+    left: 2.0em;
+    display: none;
+}
+
+#name {
+    font-size: 55px;
+    position: absolute;
+    top: 5.29em;
+    left: 3.6em;
+    display: none;
+}
+
+#is {
+    font-size: 55px;
+    position: absolute;
+    top: 5.29em;
+    left: 6.27em;
+    display: none;
+}
+
+#nathanielwroblewski {
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    position: absolute;
+    font-size: 90px;
+    line-height: 107px;
+    width: 10em;
+    top: 3.75em;
+    display: none;
+}
+
+#goldengate {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+#overview { display: none }
+
+.impress-on-overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* ################### Slideshow ###################### */
+
+#slideshow {
+    position: relative;
+    overflow: hidden;
+}
+
+#clouds{
+    /*display: none;*/
+    /*border-radius: 10px;*/
+    opacity: 1;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    background: url("/img/fogs.png");
+    background-repeat: repeat-x;
+/*    background-position: bottom;*/
+    height: 100%;
+    width: 300%;
+    /*-webkit-animation: slideshow 90s linear infinite;
+    -moz-animation:    slideshow 90s linear infinite;*/
+    /*padding: 40px 60px;*/
+    padding-bottom: 20px;
+}
+
+.sky {
+    z-index: 0;
+    overflow: hidden;
+    background: rgba(4, 158, 196, 1);
+    margin-left: -150px;
+    overflow: hidden;
+}
+
+@-webkit-keyframes slideshow {
+    0%   { left: 0; }
+    100% { left: -200%;}
+}
+
+@moz-keyframes slideshow {
+    0%   { left: 0; }
+    100% { left: -200%; }
+}
+
+.images {
+   -webkit-transform: translate3d(0, 0, 0);
+}
+
+@-webkit-keyframes moveSlideshow {
+    0%   { 
+        -webkit-transform: translateX(0);  
+    }    
+    100% { 
+        -webkit-transform: translateX(-200%);  
+    }
+} 
+@-moz-keyframes moveSlideshow {
+    0%   { 
+        -moz-transform:    translateX(0); 
+    }    
+    100% { 
+        -moz-transform:    translateX(-200%); 
+    }
+}
