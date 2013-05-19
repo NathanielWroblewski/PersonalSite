@@ -395,8 +395,64 @@ i, em { font-style: italic }
     left: 17em;
 }
 
-/*<span id="sanfrancisco"><i>I am a </i><span>
-        <span id="web">web </span>
-        <span id="dev">developer </span>
-        <span id="in"> in </span>
-        <span id="sanfran">San Francisco</span>*/
+/* ######################### LANGUAGES ######################### */
+
+.lang {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+#ispeak {
+    font-family: 'PT Serif', georgia, serif;
+    font-size: 60px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    position: absolute;
+    top: 5.5em;
+    left: -1.3em;
+}
+
+#ruby {
+    font-size: 367px;
+    position: absolute;
+    top: 0.78em;
+    left: 0.1em;
+}
+
+#rails {
+
+}
+
+#sql {
+
+}
+
+#ar {
+
+}
+
+#sinatra {
+
+}
+
+#js {
+
+}
+
+#jquery {
+
+}
+
+#ajax {
+
+}
+
+#impress{
+
+}
+
+#learn {
+
+}
