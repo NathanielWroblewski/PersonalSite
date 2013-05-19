@@ -236,8 +236,9 @@ i, em { font-style: italic }
     -webkit-border-radius: 4em; -moz-border-radius: 4em;
 }
 
-span {
-
+#intro {
+    border: none;
+    box-shadow: none;
 }
 
 #hello {
@@ -289,19 +290,6 @@ span {
     left: 0;
 }
 
-
-
-
-
-
-
-#overview { display: none }
-
-.impress-on-overview .step {
-    opacity: 1;
-    cursor: pointer;
-}
-
 /* ################### Slideshow ###################### */
 
 #slideshow {
@@ -312,8 +300,6 @@ span {
 }
 
 #clouds{
-    /*display: none;*/
-    opacity: 1;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -325,7 +311,6 @@ span {
     opacity: 0.75;
     -webkit-animation: slideshow 90s linear infinite;
     -moz-animation:    slideshow 90s linear infinite;
-    /*padding: 40px 60px;*/
     padding-bottom: 20px;
 }
 
@@ -367,3 +352,51 @@ span {
         -moz-transform:    translateX(-200%); 
     }
 }
+
+/* ################### CONTINUE ##################### */
+
+.span {
+    font-family: 'PT Serif', georgia, serif;
+    position: absolute;
+}
+
+#ima {
+    font-size: 30px;
+    top: 4em;
+    left: 4em;
+}
+
+#web {
+    color: orange;
+    font-size: 90px;
+    top: 2em;
+    left: 2em;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
+}
+
+#dev {
+    color: white;
+    font-size: 90px;
+    top: 2em;
+    left: 4em;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
+}
+
+#in {
+    font-size: 30px;
+    top: 8em;
+    left: 16em;
+}
+
+#sanfran {
+    top: 8em;
+    left: 17em;
+}
+
+/*<span id="sanfrancisco"><i>I am a </i><span>
+        <span id="web">web </span>
+        <span id="dev">developer </span>
+        <span id="in"> in </span>
+        <span id="sanfran">San Francisco</span>*/
