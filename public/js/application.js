@@ -12,5 +12,17 @@ $(document).ready(function() {
           });
         });
       });
-
+  setInterval(function(){
+    $big = $('.big');
+    $firstli = $('#list').find('li').first();
+    $lastli = $('#list').find('li').last();
+    $('#bigify').toggle("slide", 125, function(){
+      $big.removeClass('big').prependTo($('#list'));
+      $big.addClass('hidden');
+      $firstli.removeClass('hidden');
+      $lastli.appendTo($('#bigify').find('ul'));
+      $lastli.addClass('big');
+    });
+    $('#bigify').toggle("slide",  125);
+  }, 1300);
 });
