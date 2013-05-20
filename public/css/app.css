@@ -375,7 +375,7 @@ i, em { font-style: italic }
     color: orange;
     font-size: 90px;
     top: 2em;
-    left: 1.5em;
+    left: 1.0em;
     font-family: 'Open Sans', Arial, sans-serif;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
 }
@@ -385,7 +385,7 @@ i, em { font-style: italic }
     color: white;
     font-size: 90px;
     top: 2em;
-    left: 3.7em;
+    left: 3.3em;
     font-family: 'Open Sans', Arial, sans-serif;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
 }
