@@ -420,9 +420,8 @@ li {
 
 .big {
     font-size: 130px;
-    position: absolute;
-    top: 2.5em;
-    left: 0.7em;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 .hidden {
@@ -432,10 +431,16 @@ li {
 #learn {
     font-size: 30px;
     position: absolute;
-    top: 13.5em;
+    top: 14em;
     left: 18em;
 }
 
 #bigify {
-    overflow: hidden;
+overflow: hidden;
+position: absolute;
+top: 260px;
+left: 85px;
+min-width: 900px;
+min-height: 170px;
+line-height: 170px;
 }

@@ -16,16 +16,13 @@ $(document).ready(function() {
     $big = $('.big');
     $firstli = $('#list').find('li').first();
     $lastli = $('#list').find('li').last();
-    $big.animate({
-      left: parseInt($big.css('left'),10) == 0 ?
-          -$big.outerWidth() :
-          0
-    }, 1000, function(){
+    $('#bigify').toggle("slide", 1500, function(){
       $big.removeClass('big').prependTo($('#list'));
       $big.addClass('hidden');
       $firstli.removeClass('hidden');
-      $lastli.addClass('big');
       $lastli.appendTo($('#bigify').find('ul'));
+      $lastli.addClass('big');
     });
-  }, 2000);
+    $('#bigify').toggle("slide", 1500);
+  }, 4000);
 });
