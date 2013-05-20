@@ -232,7 +232,7 @@ i, em { font-style: italic }
     border: 5px solid black;
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
-    width: 4em; height: 4em; 
+    width: 6em; height: 6em; 
     -webkit-border-radius: 4em; -moz-border-radius: 4em;
 }
 

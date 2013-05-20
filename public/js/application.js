@@ -5,8 +5,8 @@ $(document).ready(function() {
       top: '+=15px'
     }, 200, function(){
         $('#my').fadeIn(200, function(){
-          $('#name').fadeIn(500, function(){
-            $('#is').fadeIn(300, function(){
+          $('#name').fadeIn(400, function(){
+            $('#is').fadeIn(400, function(){
               $('#nathanielwroblewski').fadeIn(1000);
             });
           });
