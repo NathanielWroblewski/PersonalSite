@@ -371,19 +371,21 @@ i, em { font-style: italic }
 }
 
 #web {
+    position: absolute;
     color: orange;
     font-size: 90px;
     top: 2em;
-    left: 2em;
+    left: 1.5em;
     font-family: 'Open Sans', Arial, sans-serif;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
 }
 
 #dev {
+    position: absolute;
     color: white;
     font-size: 90px;
     top: 2em;
-    left: 4em;
+    left: 3.7em;
     font-family: 'Open Sans', Arial, sans-serif;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
 }
