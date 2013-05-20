@@ -397,6 +397,10 @@ i, em { font-style: italic }
 
 /* ######################### LANGUAGES ######################### */
 
+li {
+    list-style: none;
+}
+
 .lang {
   font-family: 'Open Sans', Arial, sans-serif;
 }
@@ -414,51 +418,15 @@ i, em { font-style: italic }
     left: 0.5em;
 }
 
-#ruby {
+.big {
+    font-size: 130px;
+    position: absolute;
+    top: 2.5em;
+    left: 0.7em;
+}
+
+.hidden {
     display: none;
-    font-size: 130px;
-    position: absolute;
-    top: 2.5em;
-    left: 0.7em;
-}
-
-#rails {
-    display: none;
-    font-size: 130px;
-    position: absolute;
-    top: 2.5em;
-    left: 0.7em;
-}
-
-#ar {
-    font-size: 130px;
-    position: absolute;
-    top: 2.5em;
-    left: 0.7em;
-}
-
-#sql {
-
-}
-
-#sinatra {
-
-}
-
-#js {
-
-}
-
-#jquery {
-
-}
-
-#ajax {
-
-}
-
-#impress{
-
 }
 
 #learn {
@@ -466,4 +434,8 @@ i, em { font-style: italic }
     position: absolute;
     top: 13.5em;
     left: 18em;
+}
+
+#bigify {
+    overflow: hidden;
 }

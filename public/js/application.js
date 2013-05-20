@@ -12,5 +12,20 @@ $(document).ready(function() {
           });
         });
       });
-
+  setInterval(function(){
+    $big = $('.big');
+    $firstli = $('#list').find('li').first();
+    $lastli = $('#list').find('li').last();
+    $big.animate({
+      left: parseInt($big.css('left'),10) == 0 ?
+          -$big.outerWidth() :
+          0
+    }, 1000, function(){
+      $big.removeClass('big').prependTo($('#list'));
+      $big.addClass('hidden');
+      $firstli.removeClass('hidden');
+      $lastli.addClass('big');
+      $lastli.appendTo($('#bigify').find('ul'));
+    });
+  }, 2000);
 });
