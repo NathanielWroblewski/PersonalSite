@@ -3,7 +3,14 @@
     <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
     <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
   </div>
-  <div>
+
+<!--   <div id="navigation">
+  <a href="#start" onclick="javascript:piwikTracker.trackPageView('#start');">Start</a>
+  <a href="#viewover" onclick="javascript:piwikTracker.trackPageView('#viewover');">Übersicht</a>
+  <a href="#impressum" onclick="javascript:piwikTracker.trackPageView('#impressum');">Impressum</a>
+  </div>
+  <div> -->
+
     <div id="impress">
   
       <div id="intro" class="step slide" data-x="0" data-y="0">
@@ -48,27 +55,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-  <!-- <div id="container">
-    <div id="profile" class="step" data-x="0" data-y="0" data-z="0">
-    </div>
-    <div id="intro">
-      <p id="Hello">Hello, <span id = "mynameis"><i>my name is</i></span></p><br>
-      <span id="name">Nathaniel Wroblewski</span>
-    </div> -->
-
-  <!--   <div id="blog" class="step" data-x="1000" data-y="0" data-z="0" rotate="90">
-    </div>
-    <div id="blah">
-      <p id="blahh">Hello, <span id = "blahhh"><i>my name is</i></span></p><br>
-      <span id="blig">Nathaniel Wroblewski</span>
-    </div> -->
-
-  </div>
 
   <!--Phone and when to call, email, san francisco, facebook, twitter, tumblr-->
   <!--Examples of work, languages, circle with photo in it http://www.awwwards.com/95-inspiring-websites-of-web-design-agencies.html-->
@@ -126,14 +112,11 @@
         <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it's</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
         <span class="footnote">* beat that, prezi ;)</span>
     </div> -->
-
+      <div class="hint">
+        <p>Use a spacebar or arrow keys to navigate</p>
+      </div>
     <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
     </div>
-
-</div>
-<div class="hint">
-    <p>Use a spacebar or arrow keys to navigate</p>
-</div>
 <script>
 if ("ontouchstart" in document.documentElement) { 
     document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
