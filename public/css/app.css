@@ -470,20 +470,32 @@ li {
 
 #fb {
     left: 6.5em;
-    top: 4.2em;
+    top: 1.2em;
     position: absolute;
 }
 
 #twitter {
     left: 6.5em;
-    top: 9.1em;
+    top: 5.1em;
     position: absolute;
 }
 
 #tumblr {
     left: 6.5em;
     position: absolute;
-    top: 14.2em;
+    top: 9.2em;
+}
+
+#github {
+    left: 6.5em;
+    position: absolute;
+    top: 13.2em;
+}
+
+#linkedin {
+    left: 6.5em;
+    position: absolute;
+    top: 17.2em;
 }
 
 .icons a {
